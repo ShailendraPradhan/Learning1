@@ -1,6 +1,6 @@
 package com.DemoQA.stepDef;
 
-import java.util.List;
+import java.awt.Desktop.Action;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,9 +43,28 @@ public class StepDefinition {
 		new Select(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[1]/div/div[1]/form[1]/select"))).selectByIndex(1);
 		new Select(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[1]/div/form/select"))).selectByIndex(1);
 	}
+	@When("^select color from dropdown$")
+	public void select_color_from_dropdown() throws Throwable {
+	     
+	}
+
+	@When("^sort jacket by newness$")
+	public void sort_jacket_by_newness() throws Throwable {
+	  
+	}
 
 	@Then("^fbgbfd$")
 	public void fbgbfd() throws Throwable {
+//	WebElement element = driver.findElement(By.xpath("//*[@id='woocommerce_price_filter-1']/form/div/div[1]/span[2]"));
+//	
+//		
+//		Actions aaa = new Actions(driver);
+//		action.dagnded(ele,)
+	
 	}
-
+// Action obj = new a...
+	
+	
+	
+	
 }
