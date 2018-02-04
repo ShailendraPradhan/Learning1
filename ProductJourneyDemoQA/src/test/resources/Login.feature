@@ -7,6 +7,7 @@ Feature: To add a product from the site and checkout
     Given Site "Shop.demoqa.com" is up
     When Navigate to women
     And click on  Jackets
-    And select color from dropdown
+    When select color from dropdown
     And sort jacket by newness
+    And Click on fiter button
     Then fbgbfd
