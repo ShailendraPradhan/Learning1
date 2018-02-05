@@ -70,7 +70,7 @@ public class StepDefinition {
         	ArrayList<Integer> list = new  ArrayList<Integer>();
         	WebElement aa = driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[1]/div/div[2]/span/ins/span"));
         	String a =aa.getText().replace("£","");
-        	a.split(".")[0];
+        	a.split(".");
         	
 	list.add(Integer.parseInt(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[1]/div/div[2]/span/ins/span")).getText().replace("£","").split(".")[0]));
 	list.add(Integer.parseInt(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[3]/div/div[2]/span/ins/span")).getText().replace("£","").split(".")[0]));        	
