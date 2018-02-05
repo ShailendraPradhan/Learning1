@@ -51,20 +51,25 @@ public class StepDefinition {
 		public void Click_on_fiter_button() throws Throwable {
          driver.findElement(By.xpath("//*[@id='woocommerce_price_filter-1']/form/div/div[2]/button")).click();   
           
-          WebElement element =driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[2]/div/div[1]/a"));
-  	Actions action= new Actions(driver);
-  	action.moveToElement(element);
-  	action.perform();
+          WebElement element =driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[2]/div/h3/a"));
+  	       Actions action= new Actions(driver);
+           action.moveToElement(element);
+        	action.click();
   		
   	}
 		
-	@Then("^fbgbfd")
-	public void fbgbfd() throws Throwable {	
-//	WebElement element = driver.findElement(By.xpath("//*[@id='woocommerce_price_filter-1']/form/div/div[1]/span[2]"));
-//	
-//		
-//		Actions aaa = new Actions(driver);
-//		action.dagnded(ele,)
+		@And("^Click on selected item$")
+		public void Click_on_selected_item() throws Throwable {
+          WebElement element =driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[2]/div/h3/a"));
+  	       Actions action= new Actions(driver);
+  	     action.moveToElement(element).click(element).build().perform();
+       
+        	
+		}
+		
+	@Then("^Add to cart")
+	public void Add_to_cart() throws Throwable {	
+		driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/a/span/span[1]")).click();
 	
 	}
 

@@ -10,4 +10,5 @@ Feature: To add a product from the site and checkout
     When select color from dropdown
     And sort jacket by newness
     And Click on fiter button
-    Then fbgbfd
+    And Click on selected item
+    Then Add to cart
