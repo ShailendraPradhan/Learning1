@@ -74,7 +74,7 @@ public class StepDefinition {
         	*/
 //        	list.add(Integer.parseInt(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[1]/div/div[2]/span/ins/span")).getText().replace("£","").split(".")[0]));
 //        	list.add(Integer.parseInt(driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[3]/div/div[2]/span/ins/span")).getText().replace("£","").split(".")[0]));        	
-		//fdgfdsghd
+		//fdgfdsghdvcbnvcn
 		}
 
 	@And("^Click on selected item$")
