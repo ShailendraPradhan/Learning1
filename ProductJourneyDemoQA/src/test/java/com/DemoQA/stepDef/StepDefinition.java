@@ -55,21 +55,23 @@ public class StepDefinition {
   	       Actions action= new Actions(driver);
            action.moveToElement(element);
         	action.click();
-  		
-  	}
-		
-		@And("^Click on selected item$")
+}
+	@And("^Click on selected item$")
 		public void Click_on_selected_item() throws Throwable {
           WebElement element =driver.findElement(By.xpath("//*[@id='noo-site']/div[2]/div[2]/div[1]/div/div[2]/div/h3/a"));
   	       Actions action= new Actions(driver);
   	     action.moveToElement(element).click(element).build().perform();
-       
-        	
-		}
+}
 		
 	@Then("^Add to cart")
 	public void Add_to_cart() throws Throwable {	
-		driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/a/span/span[1]")).click();
+		driver.findElement(By.xpath("//*[@id='product-2004']/div[1]/div[2]/form/button")).click();
+		WebElement element = driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/a/span/i"));
+		Actions action = new Actions(driver);
+		action.moveToElement(element);
+		action.perform();
+	
+		driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/div/div[3]/div[2]/a[2]")).click();
 	
 	}
 
