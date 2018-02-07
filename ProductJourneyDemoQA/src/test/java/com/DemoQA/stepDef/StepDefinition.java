@@ -68,8 +68,8 @@ public class StepDefinition {
 		driver.findElement(By.xpath("//*[@id='product-2004']/div[1]/div[2]/form/button")).click();
 		WebElement element = driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/a/span/i"));
 		Actions action = new Actions(driver);
-		action.moveToElement(element);
-		action.perform();
+	 
+ 	     action.moveToElement(element).click(element).build().perform();
 	
 		driver.findElement(By.xpath("//*[@id='nav-menu-item-cart']/div/div[3]/div[2]/a[2]")).click();
 	
